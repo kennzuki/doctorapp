@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { ClerkProvider } from "@clerk/nextjs"; 
-// import {dark} from "clerk/themes";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider appearance={{ baseTheme: dark, }}>
+    <ClerkProvider >
       <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
