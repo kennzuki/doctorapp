@@ -1,6 +1,9 @@
 import { ArrowRight } from 'lucide-react';
 import Cards from './components/Cards';
 import Image from 'next/image';
+import Pricing from './components/Pricing';
+import Testimonials from './components/Testimonials';
+import Buttons from './components/Buttons';
 
 export default function Home() {
   return (
@@ -38,6 +41,9 @@ export default function Home() {
         </div>
       </div>
       <Cards />
+      <Pricing/>
+      <Testimonials />
+      <Buttons/>
     </main>
   );
 }
